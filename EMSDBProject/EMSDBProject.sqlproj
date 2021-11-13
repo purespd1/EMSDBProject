@@ -56,12 +56,20 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Snapshots" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Patient.sql" />
     <Build Include="PCP.sql" />
+    <Build Include="MedicalPractice.sql" />
+    <Build Include="MedicalRecord.sql" />
+    <Build Include="BMICalculator.sql" />
+    <Build Include="View1.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="EMSDBProject.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Snapshots\EMSDBProject_20211112_21-10-33.dacpac" />
   </ItemGroup>
 </Project>
